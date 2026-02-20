@@ -23,9 +23,9 @@
 
 |Браузер|Ссылка|
 |---|---|
-|Chrome|  <a href='chrome://extensions'>chrome://extensions/</a>|
-|Яндекс Браузер| <a href='browser://extensions'>browser://extensions/</a>|
-|Опера| <a href='opera://extensions/'>opera://extensions/</a> |
+|Chrome|  [chrome://extensions](chrome://extensions) |
+|Яндекс Браузер| [browser://extensions/](browser://extensions/) |
+|Опера| [opera://extensions/](opera://extensions/) |
 
 #### 3. Режим разработчика 👨‍💻
 
