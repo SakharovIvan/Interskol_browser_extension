@@ -21,11 +21,11 @@
 
 Откройте браузер и перейдите по ссылке:
 
-    |Браузер|Ссылка|
-    |---|---|
-    |Chrome|  <a href='chrome://extensions'>chrome://extensions/</a>|
-    Яндекс Браузер|<a href='browser://extensions'>browser://extensions/</a>|
-    Опера|<a href='opera://extensions/'>opera://extensions/</a>|
+|Браузер|Ссылка|
+|---|---|
+|Chrome|  <a href='chrome://extensions'>chrome://extensions/</a>|
+|Яндекс Браузер| <a href='browser://extensions'>browser://extensions/</a>|
+|Опера| <a href='opera://extensions/'>opera://extensions/</a> |
 
 #### 3. Режим разработчика 👨‍💻
 
