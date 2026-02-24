@@ -1,5 +1,6 @@
-import { config } from "./config";
-
+config = {
+  version: "1.0.0",
+};
 const SP_warehouse_status_view = {
   "": "Нет на складе",
   null: "Нет на складе",
@@ -94,8 +95,7 @@ button.onclick = async function () {
   return;
 };
 
-const version_check_butt = document.getElementById("version_check");
-version_check_butt.onclick = async function fetchVersion() {
+async function fetchVersion() {
   try {
     const response = await fetch(
       "https://raw.githubusercontent.com/SakharovIvan/Interskol_browser_extension/main/manifest.json",
@@ -110,17 +110,27 @@ version_check_butt.onclick = async function fetchVersion() {
       return;
     } else {
       let a = document.createElement("a");
-      a.textContent = "Обновите программу!!";
+      a.textContent = "Обновите программу!!!";
       a.setAttribute(
         "href",
         "https://github.com/SakharovIvan/Interskol_browser_extension/",
       );
       a.setAttribute("target", "_blank");
+      a.setAttribute("target", "_blank");
+
       const checkelement = document.getElementById("version");
+      let hr = document.createElement("hr");
+      checkelement.appendChild(hr);
+      a.className = "red";
       checkelement.appendChild(a);
     }
   } catch (err) {
     console.error(err);
     return null;
   }
-};
+}
+try {
+  fetchVersion();
+} catch (error) {
+  console.log(error);
+}
