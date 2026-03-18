@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Interskol mat_no search",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "description": "Adds a special extension for searching mat_no",
   "permissions": ["contextMenus", "tabs", "activeTab"],
@@ -17,8 +17,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://gis.kls-gr.ru/app/GIS",
-        "https://habr.com/ru/articles/198652/"
+        "https://gis.kls-gr.ru/app/GIS"
       ],
       "js": ["bin.js"]
     }

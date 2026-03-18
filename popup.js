@@ -1,6 +1,5 @@
-config = {
-  version: "1.0.0",
-};
+
+const B2B_URL="https://interskol-b2b-test.ru/api/spareparts/"
 const SP_warehouse_status_view = {
   "": "Нет на складе",
   null: "Нет на складе",
@@ -11,9 +10,15 @@ const SP_warehouse_status_view = {
 };
 
 const button = document.getElementById("check");
-button.onclick = async function () {
+button.onclick = searchSP
+document.getElementById('text').onkeypress = function(e) {  
+    if (e.keyCode === 13) {  
+searchSP() 
+   }  
+};  
+async function searchSP () {
   const value = document.getElementById("text").value;
-  const SP_ServiceURL = "https://interskol-b2b-test.ru/api/spareparts/";
+  const SP_ServiceURL = B2B_URL;
   const answer = document.getElementById("answer");
 
   Array.from(answer.children).forEach((child) => child.remove());
@@ -95,42 +100,3 @@ button.onclick = async function () {
   return;
 };
 
-async function fetchVersion() {
-  try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/SakharovIvan/Interskol_browser_extension/main/manifest.json",
-    );
-
-    if (!response.ok) {
-      throw new Error(`Ошибка сети: ${response.status}`);
-    }
-    // Парсим полученные данные в объект JSON
-    const data = await response.json();
-    if (data.version === config.version) {
-      return;
-    } else {
-      let a = document.createElement("a");
-      a.textContent = "Обновите программу!!!";
-      a.setAttribute(
-        "href",
-        "https://github.com/SakharovIvan/Interskol_browser_extension/",
-      );
-      a.setAttribute("target", "_blank");
-      a.setAttribute("target", "_blank");
-
-      const checkelement = document.getElementById("version");
-      let hr = document.createElement("hr");
-      checkelement.appendChild(hr);
-      a.className = "red";
-      checkelement.appendChild(a);
-    }
-  } catch (err) {
-    console.error(err);
-    return null;
-  }
-}
-try {
-  fetchVersion();
-} catch (error) {
-  console.log(error);
-}
