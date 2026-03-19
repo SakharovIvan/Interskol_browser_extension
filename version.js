@@ -2,7 +2,7 @@
 const GIT_URL="https://raw.githubusercontent.com/SakharovIvan/Interskol_browser_extension/main/manifest.json"
 const GIT_EXT_URL="https://github.com/SakharovIvan/Interskol_browser_extension/"
 config = {
-  version: "1.0.1",
+  version: "1.0.2",
 };
 async function fetchVersion() {
   try {
