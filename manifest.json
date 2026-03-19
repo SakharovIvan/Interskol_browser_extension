@@ -18,7 +18,8 @@
     {
       "matches": [
         "https://gis.kls-gr.ru/app/GIS"
-      ]
+      ],
+      "js": ["popup.js"]
     }
   ]
 }
