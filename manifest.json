@@ -18,8 +18,7 @@
     {
       "matches": [
         "https://gis.kls-gr.ru/app/GIS"
-      ],
-      "js": ["bin.js"]
+      ]
     }
   ]
 }
