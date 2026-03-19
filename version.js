@@ -1,6 +1,6 @@
 
 const GIT_URL="https://raw.githubusercontent.com/SakharovIvan/Interskol_browser_extension/main/manifest.json"
-const GIT_EXT_URL="https://github.com/SakharovIvan/Interskol_browser_extension/"
+const GIT_EXT_URL="https://disk.yandex.ru/d/PxsdodkV_hI7FA"
 config = {
   version: "1.0.2",
 };
