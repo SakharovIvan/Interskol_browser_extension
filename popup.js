@@ -9,8 +9,6 @@ const SP_warehouse_status_view = {
   3: "Только под гарантию",
 };
 
-const button = document.getElementById("check");
-button.onclick = searchSP
 document.getElementById('text').onkeypress = function(e) {  
     if (e.keyCode === 13) {  
 searchSP() 

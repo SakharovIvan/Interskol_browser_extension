@@ -10,6 +10,9 @@
     img{
             width: 45%;
     }
+    img.pdf{
+      width:32px;
+    }
 
     .container {
       display: flex;
